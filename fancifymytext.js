@@ -17,7 +17,7 @@ function boringButton() {
 }
 
 function mooButton() {
-    document.getElementById("textfield").style.textTransform = "uppercase";
+    document.getElementById("textfield").value = document.getElementById("textfield").value.toUpperCase();  // Convert text in textarea to UpperCase
     var str = document.getElementById("textfield").value;
     var parts = str.split(".");
     str = parts.join("-Moo.");
